@@ -1,15 +1,15 @@
-
 .about {
     background: var(--gray-900);
 }
- 
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
 }
- 
+
+
 .about-text h3 {
     font-size: 2rem;
     font-weight: 700;
@@ -23,38 +23,39 @@
     font-size: 1.1rem;
     line-height: 1.8;
 }
- 
+
 
 .about-image {
     display: flex;
     justify-content: center;
 }
- 
+
 .image-wrapper {
-    position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 500px;
 }
- 
+
 .image-wrapper img {
     width: 100%;
     height: auto;
     display: block;
-    transition: var(--transition);
 }
- 
+
+
 .image-wrapper:hover img {
-    transform: scale(1.05);
+    transform: none;
 }
- 
+
 
 @media (max-width: 768px) {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
- 
+
     .about-text {
         text-align: center;
     }
