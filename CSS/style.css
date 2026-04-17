@@ -61,24 +61,6 @@ ul {
 }
 
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--gray-900);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0056B3;
-}
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -113,21 +95,6 @@ section {
     margin-bottom: 1rem;
 }
 
-
-@keyframes slideInDown {
-    from { opacity: 0; transform: translateY(-50px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideInUp {
-    from { opacity: 0; transform: translateY(50px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 
 
 @media (max-width: 768px) {
