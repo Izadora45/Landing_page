@@ -1,27 +1,43 @@
-.home span {
-    font-size: 4rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--light-color) 0%, var(--primary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: slideInDown 1s ease-out;
-    line-height: 1.2;
-    display: flex;
-}
-.home-buttons{
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-.home{
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 100px 20px;
+    min-height: 100vh;
+    justify-content: center;
+}
+.home span {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--light-color);
+    animation: slideInDown 1s ease-out;
+    line-height: 1.2;
+    display: block;
+}
+.home h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--light-color);
+    margin-bottom: 1.5rem;
+    animation: slideInUp 1s ease-out 0.3s both;
+}
+.home .descricao {
+    font-size: 1.1rem;
+    color: var(--gray-400);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+    animation: fadeIn 1s ease-out 0.6s both;
+}
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    animation: slideInUp 1s ease-out 0.9s both;
 }
 .btn {
     display: inline-flex;
@@ -35,36 +51,59 @@
     cursor: pointer;
     transition: var(--transition);
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
-
 .btn-primary {
     background: var(--gradient-primary);
     color: var(--light-color);
     box-shadow: var(--shadow-md);
-    
-    
 }
-
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
-    
 }
-
 .btn-outline {
     background: transparent;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
-    
-}
-
+} 
 .btn-outline:hover {
     background: var(--primary-color);
     color: var(--light-color);
     transform: translateY(-2px);
-    
 }
-
-
-
+ 
+@media (max-width: 768px) {
+    .home span {
+        font-size: 2.8rem;
+    }
+ 
+    .home h1 {
+        font-size: 1.8rem;
+    }
+ 
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .btn {
+        min-width: 200px;
+        justify-content: center;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .home {
+        padding: 80px 15px;
+    }
+ 
+    .home span {
+        font-size: 2.2rem;
+    }
+ 
+    .home h1 {
+        font-size: 1.5rem;
+    }
+}
 
